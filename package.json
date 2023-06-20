@@ -4,9 +4,16 @@
   "description": "KPN single shop",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "version:ci": "lerna version --yes --conventional-commits --create-release github"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^6.6.1"
+  }
 }
