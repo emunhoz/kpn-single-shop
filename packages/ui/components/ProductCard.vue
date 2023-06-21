@@ -1,6 +1,12 @@
 <template>
   <div class="product-card">
-    <img :src="image" :alt="name" class="product-card__image" />
+    <img
+      :src="image"
+      :alt="name"
+      class="product-card__image"
+      width="150"
+      height="227"
+    />
     <h3 class="product-card__name">{{ name }}</h3>
     <p class="product-card__id">ID: {{ id }}</p>
   </div>
