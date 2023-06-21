@@ -40,14 +40,12 @@ fetch(
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  grid-gap: 0.5rem;
+  grid-gap: 1rem;
   grid-auto-columns: minmax(360px, 1fr);
 }
 
 .list {
   display: grid;
   grid-template-rows: auto;
-  grid-gap: 0.5rem;
-  margin: 0.5rem 0;
 }
 </style>
