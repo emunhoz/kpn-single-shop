@@ -33,9 +33,9 @@ export default {
 
 <style scoped>
 .product-card {
-  border: 1px solid #ccc;
+  background: #fff;
   padding: 16px;
-  border-radius: 4px;
+  border-radius: 12px;
 }
 
 .product-card__image {
