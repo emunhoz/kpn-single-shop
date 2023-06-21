@@ -1,12 +1,14 @@
 <template>
   <div class="product-card">
-    <img
-      :src="image"
-      :alt="name"
-      class="product-card__image"
-      width="150"
-      height="227"
-    />
+    <div class="product-card__wrapper">
+      <img
+        :src="image"
+        :alt="name"
+        class="product-card__image"
+        width="150"
+        height="227"
+      />
+    </div>
     <h3 class="product-card__name">{{ name }}</h3>
     <p class="product-card__id">ID: {{ id }}</p>
   </div>
@@ -36,6 +38,11 @@ export default {
   background: #fff;
   padding: 16px;
   border-radius: 12px;
+}
+
+.product-card__wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .product-card__image {
