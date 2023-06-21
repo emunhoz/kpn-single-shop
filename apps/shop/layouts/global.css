@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --background: #f3f3f3;
   --color-kux-text: #232323;
