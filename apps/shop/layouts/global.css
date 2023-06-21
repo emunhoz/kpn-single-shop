@@ -1,4 +1,5 @@
 :root {
+  --background: #f3f3f3;
   --color-kux-text: #232323;
 }
 
@@ -7,4 +8,8 @@ html {
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-kux-text);
+}
+
+body {
+  background: var(--background);
 }
