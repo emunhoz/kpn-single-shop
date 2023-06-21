@@ -1,6 +1,6 @@
 {
   "name": "@apps/shop",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -14,6 +14,6 @@
     "nuxt": "^3.5.2"
   },
   "dependencies": {
-    "@packages/ui": "^0.0.1"
+    "@packages/ui": "0.1.0"
   }
 }
