@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/emunhoz/kpn-single-shop/compare/@packages/ui@0.1.0...@packages/ui@0.2.0) (2023-06-21)
+
+
+### Features
+
+* **packages/ui:** adding `ProductCard` component ([105bd72](https://github.com/emunhoz/kpn-single-shop/commit/105bd720abb92dd912e362d111443aa102ce2f75))
+
+
+
+
+
 # 0.1.0 (2023-06-21)
 
 

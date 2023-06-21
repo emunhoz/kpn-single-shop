@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/emunhoz/kpn-single-shop/compare/@apps/shop@0.3.0...@apps/shop@0.4.0) (2023-06-21)
+
+
+### Features
+
+* **apps/shop:** fetching product list ([4f3bdfb](https://github.com/emunhoz/kpn-single-shop/commit/4f3bdfbe6218ef6e2dfd6527151a7a836c1879c0))
+
+
+
+
+
 # [0.3.0](https://github.com/emunhoz/kpn-single-shop/compare/@apps/shop@0.2.0...@apps/shop@0.3.0) (2023-06-21)
 
 
