@@ -1,4 +1,5 @@
 <template>
+  <ui-header></ui-header>
   <main class="main">
     <ul class="product-list">
       <li v-for="product in products" :key="product.id" class="list">
