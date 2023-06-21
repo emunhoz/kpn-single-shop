@@ -12,7 +12,7 @@
       "createRelease": "github",
       "exact": true,
       "allowBranch": "main",
-      "ignoreChanges": ["**/*.md"],
+      "ignoreChanges": ["*.md", ".test.ts", ".stories.ts"],
       "message": "chore(release): publish"
     }
   },
