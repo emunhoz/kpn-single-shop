@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://github.com/emunhoz/kpn-single-shop/compare/@apps/shop@0.6.0...@apps/shop@0.6.1) (2023-06-22)
+
+
+### Bug Fixes
+
+* **apps/shop:** filters ([c10f38f](https://github.com/emunhoz/kpn-single-shop/commit/c10f38f072e83df2456b95ac8e5ed02bb7ce56bd))
+
+
+
+
+
 # [0.6.0](https://github.com/emunhoz/kpn-single-shop/compare/@apps/shop@0.5.0...@apps/shop@0.6.0) (2023-06-22)
 
 
