@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/emunhoz/kpn-single-shop/compare/@packages/ui@0.3.1...@packages/ui@0.4.0) (2023-06-22)
+
+
+### Features
+
+* **packages/ui:** adding `Btn` component ([61c7518](https://github.com/emunhoz/kpn-single-shop/commit/61c751890fb64b69df5e829d3240a89bb265d66a))
+* **packages/ui:** adding `Pill` component ([9c1b5cf](https://github.com/emunhoz/kpn-single-shop/commit/9c1b5cfd0e5c6299d4e9cd735ed1781576694dad))
+* **packages/ui:** adding `ProductCardSkeleton` component ([c782230](https://github.com/emunhoz/kpn-single-shop/commit/c78223090ad04815d5cd791d60f6cb59dc5a96d7))
+
+
+
+
+
 ## [0.3.1](https://github.com/emunhoz/kpn-single-shop/compare/@packages/ui@0.3.0...@packages/ui@0.3.1) (2023-06-22)
 
 **Note:** Version bump only for package @packages/ui

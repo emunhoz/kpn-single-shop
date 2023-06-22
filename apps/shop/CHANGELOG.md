@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/emunhoz/kpn-single-shop/compare/@apps/shop@0.5.0...@apps/shop@0.6.0) (2023-06-22)
+
+
+### Features
+
+* **apps/shop:** updating home page with new components ([ff0683d](https://github.com/emunhoz/kpn-single-shop/commit/ff0683d28d3f236396d5dd76a2f25ccd17042537))
+
+
+
+
+
 # [0.5.0](https://github.com/emunhoz/kpn-single-shop/compare/@apps/shop@0.4.5...@apps/shop@0.5.0) (2023-06-22)
 
 
