@@ -6,7 +6,6 @@
   <h2 class="quantity" v-else>No items were found!</h2>
   <main class="main">
     <div class="filters">
-      <!-- <ui-btn @click="toggleSidebar">+ Filter</ui-btn> -->
       <ui-pill
         variant="secondary"
         name="Refurbished"
@@ -36,35 +35,17 @@
     </ul>
     <div v-if="!products && !loading" class="text-center">Loading...</div>
   </main>
-  <!-- <div class="sidebar" :class="{ 'sidebar-open': showSidebar }">
-    <button @click="toggleSidebar">Close</button>
-  </div> -->
 </template>
 
 <script lang="ts" setup>
 import { ref, computed } from 'vue'
-
-interface ProductProps {
-  id: number
-  name: string
-  image: string
-  has_5g: boolean
-  refurbished: boolean
-  has_esim: boolean
-  operating_system: string
-}
+import { fetchProducts } from '~/services/product'
+import { ProductProps, FilterByProps } from '~/types/product'
 
 const products = ref<ProductProps[] | null>(null)
-// const showSidebar = ref(false)
 const loading = ref(true)
 
-const filterBy = ref<{
-  refurbished: boolean
-  has5g: boolean
-  hasEsim: boolean
-  apple: boolean
-  android: boolean
-}>({
+const filterBy = ref<FilterByProps>({
   refurbished: false,
   has5g: false,
   hasEsim: false,
@@ -72,18 +53,15 @@ const filterBy = ref<{
   android: false,
 })
 
-fetch(
-  'https://gist.githubusercontent.com/MaxKostenko/cfb308759c6b2c9762e91dadafe70c0e/raw/934bf752550a715712c905330c8db683674fb57c/phone_feed.json'
-)
-  .then((response) => response.json())
+fetchProducts()
   .then((data) => {
     products.value = data.products
     loading.value = false
   })
-
-// function toggleSidebar() {
-//   showSidebar.value = !showSidebar.value
-// }
+  .catch((error) => {
+    console.error('Failed to fetch products:', error)
+    loading.value = false
+  })
 
 const filteredProducts = computed(() => {
   if (!products.value) {
@@ -166,21 +144,5 @@ const quantity = computed(() => filteredProducts.value?.length || 0)
 .list {
   display: grid;
   grid-template-rows: auto;
-}
-
-.sidebar {
-  width: 320px;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: -320px;
-  transition: left 0.3s ease;
-  padding: 20px;
-}
-
-.sidebar-open {
-  left: 0;
-  background: #fff;
-  box-shadow: -10px 0px 30px -14px rgba(0, 0, 0, 0.25);
 }
 </style>
