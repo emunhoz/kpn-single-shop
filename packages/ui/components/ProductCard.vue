@@ -9,8 +9,8 @@
         height="227"
       />
     </div>
-    <h3 class="product-card__name">{{ name }}</h3>
     <p class="product-card__id">ID: {{ id }}</p>
+    <h3 class="product-card__name">{{ name }}</h3>
   </div>
 </template>
 
