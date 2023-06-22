@@ -1,6 +1,6 @@
 import { ProductProps, FilterByProps } from '~/types/product'
 
-export function filteredProducts(
+export function filterProducts(
   products: ProductProps[] | null,
   filterBy: FilterByProps
 ): ProductProps[] | null {

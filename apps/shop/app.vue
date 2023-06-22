@@ -41,6 +41,7 @@
 import { ref, computed } from 'vue'
 import { fetchProducts } from '~/services/product'
 import { ProductProps, FilterByProps } from '~/types/product'
+import { filterProducts } from '~/filters/product'
 
 const products = ref<ProductProps[] | null>(null)
 const loading = ref(true)
@@ -63,45 +64,9 @@ fetchProducts()
     loading.value = false
   })
 
-const filteredProducts = computed(() => {
-  if (!products.value) {
-    return null
-  }
-
-  return products.value.filter((product) => {
-    return Object.entries(filterBy.value).every(([key, value]) => {
-      if (filterBy.value.apple && filterBy.value.android) {
-        return true
-      }
-
-      if (!value) {
-        return true
-      }
-
-      if (key === 'refurbished') {
-        return product.refurbished === true
-      }
-
-      if (key === 'has5g') {
-        return product.has_5g === true
-      }
-
-      if (key === 'hasEsim') {
-        return product.has_esim === true
-      }
-
-      if (key === 'apple') {
-        return product.operating_system.toLowerCase() === 'ios'
-      }
-
-      if (key === 'android') {
-        return product.operating_system.toLowerCase() === 'android'
-      }
-
-      return true
-    })
-  })
-})
+const filteredProducts = computed(() =>
+  filterProducts(products.value, filterBy.value)
+)
 
 const quantity = computed(() => filteredProducts.value?.length || 0)
 </script>
