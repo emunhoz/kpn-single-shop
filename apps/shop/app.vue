@@ -55,9 +55,8 @@ interface ProductProps {
 }
 
 const products = ref<ProductProps[] | null>(null)
-const showSidebar = ref(false)
+// const showSidebar = ref(false)
 const loading = ref(true)
-const selectedFilters = ref<string[]>([])
 
 const filterBy = ref<{
   refurbished: boolean
@@ -91,12 +90,12 @@ const filteredProducts = computed(() => {
     return null
   }
 
-  if (!Object.values(filterBy.value).some((val) => val === true)) {
-    return products.value
-  }
-
   return products.value.filter((product) => {
     return Object.entries(filterBy.value).every(([key, value]) => {
+      if (filterBy.value.apple && filterBy.value.android) {
+        return true
+      }
+
       if (!value) {
         return true
       }
