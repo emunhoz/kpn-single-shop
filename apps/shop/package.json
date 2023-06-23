@@ -6,11 +6,13 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "cypress:open": "cypress open"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@types/node": "^18",
+    "cypress": "^12.15.0",
     "nuxt": "^3.5.2"
   },
   "dependencies": {
