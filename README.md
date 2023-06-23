@@ -2,7 +2,7 @@
 
 | Apps/Package                    | Description                                 |
 | ------------------------------- | ------------------------------------------- |
-| [`@apps/shop`](./apps/shop)     | Front end application create with Nuxt      |
+| [`@apps/shop`](./apps/shop)     | Front end application created with Nuxt      |
 | [`@packages/ui`](./packages/ui) | Vue component library made with `@nuxt/kit` |
 
 ## ⚒️ Stack
