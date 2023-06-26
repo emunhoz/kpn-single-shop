@@ -33,7 +33,6 @@
         />
       </li>
     </ul>
-    <div v-if="!products && !loading" class="text-center">Loading...</div>
   </main>
 </template>
 
