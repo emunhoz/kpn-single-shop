@@ -16,8 +16,8 @@
       <ui-pill variant="secondary" name="Apple" v-model="filterBy.apple" />
       <ui-pill variant="secondary" name="Android" v-model="filterBy.android" />
     </div>
-    <ul class="product-list">
-      <li v-if="loading" v-for="n in 12" :key="n" class="list">
+    <ul class="product-list" role="list">
+      <li v-if="loading" v-for="n in 12" :key="n" class="list" role="listitem">
         <ui-product-card-skeleton />
       </li>
       <li
@@ -25,6 +25,7 @@
         v-for="product in filteredProducts"
         :key="product.id"
         class="list"
+        role="listitem"
       >
         <ui-product-card
           :image="'https://www.svgrepo.com/show/397517/mobile-phone.svg'"
@@ -38,9 +39,9 @@
 
 <script lang="ts" setup>
 import { ref, computed } from 'vue'
-import { fetchProducts } from '~/services/product'
-import { ProductProps, FilterByProps } from '~/types/product'
-import { filterProducts } from '~/filters/product'
+import { fetchProducts } from './services/product'
+import { ProductProps, FilterByProps } from './types/product'
+import { filterProducts } from './filters/product'
 
 const products = ref<ProductProps[] | null>(null)
 const loading = ref(true)
