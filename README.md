@@ -2,7 +2,7 @@
 
 | Apps/Package                    | Description                                 |
 | ------------------------------- | ------------------------------------------- |
-| [`@apps/shop`](./apps/shop)     | Front end application created with Nuxt      |
+| [`@apps/shop`](./apps/shop)     | Front end application created with Nuxt     |
 | [`@packages/ui`](./packages/ui) | Vue component library made with `@nuxt/kit` |
 
 ## ⚒️ Stack
@@ -42,6 +42,12 @@ In the root folder run the following commands:
 ```
 
 ## 🚦 Testing
+
+Unit tests: Go to [`shop`](./apps/shop) and then run the following command:
+
+```bash
+  npm run test
+```
 
 E2E tests: Go to [`shop`](./apps/shop) and then run the following command:
 
