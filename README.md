@@ -11,6 +11,8 @@
 - Nuxt
 - Vue 3
 - Cypress (E2E test)
+- Vitest (Unit test)
+- @vue/test-utils (Unit test)
 - Github actions with Release
 - Component library with Vue and `@nuxt/kit`
 - Conventional commits
